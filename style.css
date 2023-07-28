@@ -1,0 +1,89 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url("https://media.istockphoto.com/id/1160569491/es/foto/reloj-de-bolsillo-viejo-sobre-fondo-oscuro.jpg?s=612x612&w=0&k=20&c=yxUhPV5XJG9zRGQZlzHckDehHED75HZEZY2q1TTqF-E=");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+}
+
+#todo-container {
+    max-width: 600px;
+    margin: 20px auto;
+    background-color: #ffffff;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+#todo-container h2 {
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 600;
+    font-style: italic;
+}
+
+.form-control {
+    margin-bottom: 20px;
+}
+
+.task {
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #ffffff;
+    border-radius: 4px;
+}
+
+.task .title {
+    font-weight: bold;
+    color: #333333;
+}
+
+.task .description {
+    color: #666666;
+}
+
+.task .actions {
+    display: flex;
+}
+
+.task .actions button {
+    margin-left: 5px;
+    cursor: pointer;
+    border: none;
+    background-color: #f44336;
+    color: #ffffff;
+    border-radius: 4px;
+    padding: 6px 10px;
+    transition: background-color 0.2s;
+}
+
+.task .actions button:hover {
+    background-color: #d32f2f;
+}
+
+.task .actions button.completed {
+    background-color: #4caf50;
+}
+
+.task .actions button.completed:hover {
+    background-color: #45a049;
+}
+
+@media screen and (max-width: 600px) {
+    #todo-container {
+        margin: 10px;
+    }
+
+    .task {
+        padding: 8px;
+    }
+
+    .task .actions button {
+        font-size: 12px;
+        padding: 4px 8px;
+    }
+}
